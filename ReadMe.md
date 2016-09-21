@@ -13,7 +13,7 @@
    * 有网,但是信号很差,网速很慢,跟没网一样.这时候应该认为无网.
    
 ####解决方案
-事实上Reachability已经很好了,但是实际上客户端到达服务器需要很多道"关卡",例如路由器,电信服务器,防火墙等.其实说白了就是解决一个问题:`客户端是否能够成功访问服务器`.这里介绍另外一个官方的类:SimplePing[**点我查看**](https://developer.apple.com/library/content/samplecode/SimplePing/Introduction/Intro.html#//apple_ref/doc/uid/DTS10000716-Intro-DontLinkElementID_2).
+事实上Reachability已经很好了,但是实际上客户端到达服务器需要很多道"关卡",例如路由器,电信服务器,防火墙等.其实说白了就是解决一个问题:***`客户端是否能够成功访问服务器`***.这里介绍另外一个官方的类:SimplePing[**点我查看**](https://developer.apple.com/library/content/samplecode/SimplePing/Introduction/Intro.html#//apple_ref/doc/uid/DTS10000716-Intro-DontLinkElementID_2).
 
 ####SimplePing
 SimplePing也是官方文档的一个类,目的是ping服务器,可以判断客户端是否可以连接到指定服务器.ping 类似于心跳包功能,隔一段时间就ping下服务器,看是否畅通无阻.因此ping不可能做到及时判断网络变化,会有一定的延迟.可能大家已经猜到了我的思路,没错,把他们两个合在一起.下面说说我的思路:
@@ -77,6 +77,6 @@ SimplePing也是官方文档的一个类,目的是ping服务器,可以判断客�
   
 * 支持模拟器,支持IPv4,IPv6
 
-详细代码在这里:github地址:<>,支持cocoapods,欢迎使用!
+详细代码在这里:github地址:<https://github.com/iOSSinger/SGNetObserver>,支持cocoapods,欢迎使用!
   
 最后,如果有什么不对,欢迎大家留言指正.
