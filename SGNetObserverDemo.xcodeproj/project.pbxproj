@@ -13,6 +13,11 @@
 		1812BC181D8F08BC005FC657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1812BC161D8F08BC005FC657 /* Main.storyboard */; };
 		1812BC1A1D8F08BC005FC657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1812BC191D8F08BC005FC657 /* Assets.xcassets */; };
 		1812BC1D1D8F08BC005FC657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1812BC1B1D8F08BC005FC657 /* LaunchScreen.storyboard */; };
+		1812BC2D1D901EB4005FC657 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812BC2C1D901EB4005FC657 /* SimplePing.m */; };
+		1812BC301D903F6F005FC657 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812BC2F1D903F6F005FC657 /* Reachability.m */; };
+		1812BC331D903FD0005FC657 /* SGNetObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812BC321D903FD0005FC657 /* SGNetObserver.m */; };
+		1812BC381D906C17005FC657 /* SimplePinger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812BC371D906C17005FC657 /* SimplePinger.m */; };
+		1812BC3A1D92DDEE005FC657 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1812BC391D92DDED005FC657 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		1812BC191D8F08BC005FC657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1812BC1C1D8F08BC005FC657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1812BC1E1D8F08BC005FC657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1812BC2B1D901EB4005FC657 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		1812BC2C1D901EB4005FC657 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		1812BC2E1D903F6F005FC657 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1812BC2F1D903F6F005FC657 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1812BC311D903FD0005FC657 /* SGNetObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGNetObserver.h; sourceTree = "<group>"; };
+		1812BC321D903FD0005FC657 /* SGNetObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGNetObserver.m; sourceTree = "<group>"; };
+		1812BC361D906C17005FC657 /* SimplePinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePinger.h; sourceTree = "<group>"; };
+		1812BC371D906C17005FC657 /* SimplePinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePinger.m; sourceTree = "<group>"; };
+		1812BC391D92DDED005FC657 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1812BC3A1D92DDEE005FC657 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,7 @@
 		1812BC011D8F08BC005FC657 = {
 			isa = PBXGroup;
 			children = (
+				1812BC391D92DDED005FC657 /* SystemConfiguration.framework */,
 				1812BC0C1D8F08BC005FC657 /* SGNetObserverDemo */,
 				1812BC0B1D8F08BC005FC657 /* Products */,
 			);
@@ -58,6 +74,7 @@
 		1812BC0C1D8F08BC005FC657 /* SGNetObserverDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1812BC241D8F08FA005FC657 /* SGNetObserver */,
 				1812BC101D8F08BC005FC657 /* AppDelegate.h */,
 				1812BC111D8F08BC005FC657 /* AppDelegate.m */,
 				1812BC131D8F08BC005FC657 /* ViewController.h */,
@@ -78,6 +95,21 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		1812BC241D8F08FA005FC657 /* SGNetObserver */ = {
+			isa = PBXGroup;
+			children = (
+				1812BC2E1D903F6F005FC657 /* Reachability.h */,
+				1812BC2F1D903F6F005FC657 /* Reachability.m */,
+				1812BC2B1D901EB4005FC657 /* SimplePing.h */,
+				1812BC2C1D901EB4005FC657 /* SimplePing.m */,
+				1812BC361D906C17005FC657 /* SimplePinger.h */,
+				1812BC371D906C17005FC657 /* SimplePinger.m */,
+				1812BC311D903FD0005FC657 /* SGNetObserver.h */,
+				1812BC321D903FD0005FC657 /* SGNetObserver.m */,
+			);
+			path = SGNetObserver;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -152,6 +184,10 @@
 				1812BC151D8F08BC005FC657 /* ViewController.m in Sources */,
 				1812BC121D8F08BC005FC657 /* AppDelegate.m in Sources */,
 				1812BC0F1D8F08BC005FC657 /* main.m in Sources */,
+				1812BC331D903FD0005FC657 /* SGNetObserver.m in Sources */,
+				1812BC381D906C17005FC657 /* SimplePinger.m in Sources */,
+				1812BC2D1D901EB4005FC657 /* SimplePing.m in Sources */,
+				1812BC301D903F6F005FC657 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
