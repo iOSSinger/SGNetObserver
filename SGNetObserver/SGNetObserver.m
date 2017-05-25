@@ -56,8 +56,8 @@ NSString *SGReachabilityChangedNotification = @"SGNetworkReachabilityChangedNoti
 }
 
 - (void)stopNotifier{
-    [self.hostReachability startNotifier];
-    [self.pinger startNotifier];
+    [self.hostReachability stopNotifier];
+    [self.pinger stopNotifier];
 }
 
 #pragma mark - delegate
